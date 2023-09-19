@@ -1,5 +1,5 @@
-#include "Player.h"
-#include "Matrica.h"
+#include "player.h"
+#include "matrica.h"
 
 void Player::Play() {
 	this->money = this->money - stake;
@@ -83,12 +83,12 @@ void Player::Play() {
 	else if (m.ThreeCol()) {
 		switch (m.found) {
 		case 15:
-			std::cout << "CUTE KING WIN  " << std::endl;
+			std::cout << "CUTE KING WIN" << std::endl;
 			this->money = this->money + stake * 30;
 			std::cout << "CONGRATS YOU WON : " << stake * 30 << std::endl;
 			break;
 		case 14:
-			std::cout << "CUTE QUEEN WIN  " << std::endl;
+			std::cout << "CUTE QUEEN WIN" << std::endl;
 			this->money = this->money + stake * 28;
 			std::cout << "CONGRATS YOU WON : " << stake * 28 << std::endl;
 			break;
@@ -98,27 +98,27 @@ void Player::Play() {
 			std::cout << "CONGRATS YOU WON : " << stake * 26 << std::endl;
 			break;
 		case 12:
-			std::cout << "CUTE ACE WIN  " << std::endl;
+			std::cout << "CUTE ACE WIN" << std::endl;
 			this->money = this->money + stake * 24;
 			std::cout << "CONGRATS YOU WON : " << stake * 24 << std::endl;
 			break;
 		case 11:
-			std::cout << "GOOD B WIN  " << std::endl;
+			std::cout << "GOOD B WIN" << std::endl;
 			this->money = this->money + stake * 22;
 			std::cout << "CONGRATS YOU WON : " << stake * 22 << std::endl;
 			break;
 		case 10:
-			std::cout << "GOOD C WIN  " << std::endl;
+			std::cout << "GOOD C WIN" << std::endl;
 			this->money = this->money + stake * 20;
 			std::cout << "CONGRATS YOU WON : " << stake * 20 << std::endl;
 			break;
 		case 9:
-			std::cout << "3 NINES  " << std::endl;
+			std::cout << "3 NINES" << std::endl;
 			this->money = this->money + stake * 18;
 			std::cout << "CONGRATS YOU WON : " << stake * 18 << std::endl;
 			break;
 		case 8:
-			std::cout << "3 EIGHTS  " << std::endl;
+			std::cout << "3 EIGHTS" << std::endl;
 			this->money = this->money + stake * 16;
 			std::cout << "CONGRATS YOU WON : " << stake * 16 << std::endl;
 			break;
@@ -128,22 +128,22 @@ void Player::Play() {
 			std::cout << "CONGRATS YOU WON : " << stake * 14 << std::endl;
 			break;
 		case 6:
-			std::cout << "3 SIXES  " << std::endl;
+			std::cout << "3 SIXES" << std::endl;
 			this->money = this->money + stake * 12;
 			std::cout << "CONGRATS YOU WON : " << stake * 12 << std::endl;
 			break;
 		case 5:
-			std::cout << "3 FIVES  " << std::endl;
+			std::cout << "3 FIVES" << std::endl;
 			this->money = this->money + stake * 10;
 			std::cout << "CONGRATS YOU WON : " << stake * 10 << std::endl;
 			break;
 		case 4:
-			std::cout << "3 FOURS  " << std::endl;
+			std::cout << "3 FOURS" << std::endl;
 			this->money = this->money + stake * 8;
 			std::cout << "CONGRATS YOU WON : " << stake * 8 << std::endl;
 			break;
 		case 3:
-			std::cout << "3 THREES  " << std::endl;
+			std::cout << "3 THREES" << std::endl;
 			this->money = this->money + stake * 6;
 			std::cout << "CONGRATS YOU WON : " << stake * 6 << std::endl;
 			break;
@@ -157,42 +157,42 @@ void Player::Play() {
 		else if (m.FourRow()) {
 			switch (m.found) {
 			case 15:
-				std::cout << "MEGA KING WIN  " << std::endl;
+				std::cout << "MEGA KING WIN" << std::endl;
 				this->money = this->money + stake * 225;
 				std::cout << "CONGRATS YOU WON : " << stake * 225 << std::endl;
 				break;
 			case 14:
-				std::cout << "MEGA QUEEN WIN  " << std::endl;
+				std::cout << "MEGA QUEEN WIN" << std::endl;
 				this->money = this->money + stake * 196;
 				std::cout << "CONGRATS YOU WON : " << stake * 196 << std::endl;
 				break;
 			case 13:
-				std::cout << "MEGA JACK WIN  " << std::endl;
+				std::cout << "MEGA JACK WIN" << std::endl;
 				this->money = this->money + stake * 169;
 				std::cout << "CONGRATS YOU WON : " << stake * 169 << std::endl;
 				break;
 			case 12:
-				std::cout << "MEGA ACE WIN  " << std::endl;
+				std::cout << "MEGA ACE WIN" << std::endl;
 				this->money = this->money + stake * 144;
 				std::cout << "CONGRATS YOU WON : " << stake * 144 << std::endl;
 				break;
 			case 11:
-				std::cout << "STRONG B WIN  " << std::endl;
+				std::cout << "STRONG B WIN" << std::endl;
 				this->money = this->money + stake * 121;
 				std::cout << "CONGRATS YOU WON : " << stake * 121 << std::endl;
 				break;
 			case 10:
-				std::cout << "STRONG C WIN  " << std::endl;
+				std::cout << "STRONG C WIN" << std::endl;
 				this->money = this->money + stake * 100;
 				std::cout << "CONGRATS YOU WON : " << stake * 100 << std::endl;
 				break;
 			case 9:
-				std::cout << "4 NINES  " << std::endl;
+				std::cout << "4 NINES" << std::endl;
 				this->money = this->money + stake * 81;
 				std::cout << "CONGRATS YOU WON : " << stake * 81 << std::endl;
 				break;
 			case 8:
-				std::cout << "4 EIGHTS  " << std::endl;
+				std::cout << "4 EIGHTS" << std::endl;
 				this->money = this->money + stake * 64;
 				std::cout << "CONGRATS YOU WON : " << stake * 64 << std::endl;
 				break;
@@ -202,22 +202,22 @@ void Player::Play() {
 				std::cout << "CONGRATS YOU WON : " << stake * 49 << std::endl;
 				break;
 			case 6:
-				std::cout << "4 SIXES  " << std::endl;
+				std::cout << "4 SIXES" << std::endl;
 				this->money = this->money + stake * 36;
 				std::cout << "CONGRATS YOU WON : " << stake * 36 << std::endl;
 				break;
 			case 5:
-				std::cout << "4 FIVES  " << std::endl;
+				std::cout << "4 FIVES" << std::endl;
 				this->money = this->money + stake * 25;
 				std::cout << "CONGRATS YOU WON : " << stake * 25 << std::endl;
 				break;
 			case 4:
-				std::cout << "4 FOURS  " << std::endl;
+				std::cout << "4 FOURS" << std::endl;
 				this->money = this->money + stake * 16;
 				std::cout << "CONGRATS YOU WON : " << stake * 16 << std::endl;
 				break;
 			case 3:
-				std::cout << "4 THREES  " << std::endl;
+				std::cout << "4 THREES" << std::endl;
 				this->money = this->money + stake * 9;
 				std::cout << "CONGRATS YOU WON : " << stake * 9 << std::endl;
 				break;
@@ -326,12 +326,7 @@ void Player::setPlayer() {
 	std::cout << std::endl;
 }
 bool Player::MCheck() {
-	if (this->money >= this->stake) {
-		return true;
-	}
-	else {
-		return false;
-	}
+	return money >= stake;
 }
 float Player::GetM() {
 	return money;

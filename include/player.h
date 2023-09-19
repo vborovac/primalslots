@@ -3,8 +3,7 @@
 #include <iostream>
 #include <cstdlib>
 #include <ctime>
-#include <windows.h>
-#include "Matrica.h"
+#include "matrica.h"
 class Player : public Matrica
 {
 public :
