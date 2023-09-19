@@ -2,7 +2,15 @@
 #include <iostream>
 #include <cstdlib>
 #include <ctime>
-#include <windows.h>
+
+#ifdef _WIN32
+	#include <windows.h>
+	#define SLEEP(x) Sleep(x)
+#else
+	#include <unistd.h>
+	#define SLEEP(x) usleep(x)
+#endif
+
 class Matrica
 {
 public :

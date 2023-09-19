@@ -1,8 +1,13 @@
 #include <iostream>
 #include <cstdlib>
 #include <ctime>
-#include "Matrica.h"
-#include "Player.h"
+#include "matrica.h"
+#include "player.h"
+
+
+
+
+
 
 int main() {
     Player p;
